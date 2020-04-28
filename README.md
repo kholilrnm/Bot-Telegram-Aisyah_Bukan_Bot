@@ -36,13 +36,13 @@ Via Telegram : @Aisyah_Bukan_Bot
 <br>
 
 ## Cara Menjalankan Via Hosting
-1. Clone This Repo 
+1. Clone / Download This Repo 
 2. Push to Web Host.
 3. Webhook BOT : https://api.telegram.org/bot[TokenBOT]/setWebhook?url=[Webhost]/[FolderProject]/bot.php
 4. Done!. Testing for The BOT telegram
 
 ## Cara Menjalankan Via Local
-1. Clone This Repo 
+1. Clone / Download This Repo 
 2. Push to htdocs or folder localhost.
 3. Webhook BOT : curl -d url=[ngrok server]/bot.php -X POST https://api.telegram.org/bot[TokenBOT]/setWebhook
 4. Done!. Testing for The BOT telegram
