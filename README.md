@@ -7,7 +7,7 @@ Proyek akhir mata kuliah Pemrograman Web
 
 <br>
 <p align="center">
-        <img src="/public/images/app-ss.png" width="600" height="800">
+        <img src="/images/aisyah1.jpg" width="600" height="800">
 </p>
 <br>
 
