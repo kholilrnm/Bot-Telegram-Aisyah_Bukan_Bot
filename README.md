@@ -7,7 +7,7 @@ Proyek API Development
 
 <br>
 <p align="center">
-        <img src="/images/aisyah1.jpg" width="300" height="450">
+        <img src="/images/aisyah1.jpg" width="238" height="414">
 </p>
 <br>
 
