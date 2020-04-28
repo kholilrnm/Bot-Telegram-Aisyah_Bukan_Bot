@@ -2,12 +2,12 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
 ![GitHub last commit](https://img.shields.io/github/last-commit/kholilboy/Aisyah-Bukan-Bot)
 
-## Riferr
-Proyek akhir mata kuliah Pemrograman Web
+## Aisyah Bukan BOT
+Proyek API Development
 
 <br>
 <p align="center">
-        <img src="/images/aisyah1.jpg" width="600" height="800">
+        <img src="/images/aisyah1.jpg" width="300" height="450">
 </p>
 <br>
 
