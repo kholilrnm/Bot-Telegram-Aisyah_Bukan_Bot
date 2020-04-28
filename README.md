@@ -6,10 +6,11 @@
 Proyek API Development
 
 ## Tools / Framework
-| Bagian | Tool(s) yang digunakan |
+| Bagian | Tools yang digunakan |
 | --- | --- |
-| Back-End | Botman->PHP |
+| Back-End | Botman -> PHP |
 | Database | MySQL |
+| Web Server | Ngrok or Hosting |
 
 ## Demo BOT
 Via Telegram : @Aisyah_Bukan_Bot
@@ -18,13 +19,11 @@ Via Telegram : @Aisyah_Bukan_Bot
 <p align="center">
         <img src="/images/aisyah1.jpg" width="238" height="414">
 </p>
-<br>
 
 <br>
 <p align="center">
         <img src="/images/aisyah2.jpg" width="238" height="414">
 </p>
-<br>
 
 <br>
 <p align="center">
