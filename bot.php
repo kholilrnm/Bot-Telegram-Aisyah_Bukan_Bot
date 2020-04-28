@@ -11,11 +11,11 @@ use BotMan\BotMan\Messages\Outgoing\OutgoingMessage;
 require_once 'vendor/autoload.php';
 require_once 'database/configDB.php';
 
-$configs = [
-    "telegram" => [
-        "token" => file_get_contents("private/token.txt")
-    ]
-];
+// $configs = [
+//     "telegram" => [
+//         "token" => file_get_contents("private/token.txt")
+//     ]
+// ];
 
 DriverManager::loadDriver(TelegramDriver::class);
 
