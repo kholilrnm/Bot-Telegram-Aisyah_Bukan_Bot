@@ -5,17 +5,41 @@
 ## Aisyah Bukan BOT
 Proyek API Development
 
-<br>
-<p align="center">
-        <img src="/images/aisyah1.jpg" width="238" height="414">
-</p>
-<br>
-
 ## Tools / Framework
 | Bagian | Tool(s) yang digunakan |
 | --- | --- |
 | Back-End | Botman->PHP |
 | Database | MySQL |
 
-## Cara Menjalankan
-- 
+## Demo BOT
+Via Telegram : @Aisyah_Bukan_Bot
+
+<br>
+<p align="center">
+        <img src="/images/aisyah1.jpg" width="238" height="414">
+</p>
+<br>
+
+<br>
+<p align="center">
+        <img src="/images/aisyah2.jpg" width="238" height="414">
+</p>
+<br>
+
+<br>
+<p align="center">
+        <img src="/images/aisyah3.jpg" width="238" height="414">
+</p>
+<br>
+
+## Cara Menjalankan Via Hosting
+1. Clone This Repo 
+2. Push to Web Host.
+3. Webhook BOT : https://api.telegram.org/bot[TokenBOT]/setWebhook?url=[Webhost]/[FolderProject]/bot.php
+4. Done!. Testing for The BOT telegram
+
+## Cara Menjalankan Via Local
+1. Clone This Repo 
+2. Push to htdocs or folder localhost.
+3. Webhook BOT : curl -d url=[ngrok server]/bot.php -X POST https://api.telegram.org/bot[TokenBOT]/setWebhook
+4. Done!. Testing for The BOT telegram
