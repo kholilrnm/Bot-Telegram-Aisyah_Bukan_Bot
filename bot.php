@@ -11,11 +11,11 @@ use BotMan\BotMan\Messages\Outgoing\OutgoingMessage;
 require_once 'vendor/autoload.php';
 require_once 'database/configDB.php';
 
-// $configs = [
-//     "telegram" => [
-//         "token" => file_get_contents("private/token.txt")
-//     ]
-// ];
+$configs = [
+    "telegram" => [
+        "token" => file_get_contents("private/token.txt")
+    ]
+];
 
 DriverManager::loadDriver(TelegramDriver::class);
 
@@ -27,7 +27,7 @@ $botman->hears("/start", function (BotMan $bot) {
     $firstname = $user->getFirstName();
     $id_user = $user->getId();
 
-    $bot->reply("Assalamualaikum $firstname 😊 (ID:$id),\nNama Saya Aisyah Salma. Selamat Datang Di Layanan Sekretaris Pribadi Anda.\n\nKetikkan Perintah /help Untuk Mengetahui Menu Perintah Yang Bisa Saya Kerjakan");
+    $bot->reply("Assalamualaikum $firstname ðŸ˜Š (ID:$id_user),\nNama Saya Aisyah Salma. Selamat Datang Di Layanan Sekretaris Pribadi Anda.\n\nKetikkan Perintah /help Untuk Mengetahui Menu Perintah Yang Bisa Saya Kerjakan");
     include "command/requestChat.php";
 });
 
@@ -63,10 +63,10 @@ $botman->hears("/tambah_catatan_tugas_kuliah", function (BotMan $bot) {
     $id_user = $user->getId();
 
     include "command/requestChat.php";
-    $bot->reply("Format Tambah Catatan Tugas Kuliah :\n\n/tambah_catatan [Nama Mata Kuliah]__[Catatan Mata Kuliah]__[Deadline M.K]\n\n*Tanpa Tanda Kurung []");
+    $bot->reply("Format Tambah Catatan Tugas Kuliah :\n\n/tambah_catatan [Nama Mata Kuliah]_[Catatan Mata Kuliah]_[Deadline M.K]\n\n*Tanpa Tanda Kurung []");
 });
 
-$botman->hears("/tambah_catatan {nama_mk}__{catatan_mk}__{deadline_mk}", function (Botman $bot, $nama_mk, $catatan_mk, $deadline_mk) {
+$botman->hears("/tambah_catatan {nama_mk}_{catatan_mk}_{deadline_mk}", function (Botman $bot, $nama_mk, $catatan_mk, $deadline_mk) {
     $user = $bot->getUser();
     $firstname = $user->getFirstName();
     $id_user = $user->getId();
@@ -89,10 +89,10 @@ $botman->hears("/edit_catatan_tugas_kuliah", function (Botman $bot) {
     $id_user = $user->getId();
 
     include "command/requestChat.php";
-    $bot->reply("Format Edit Catatan Tugas Kuliah :\n\n/edit_catatan [Pilih ID Kode MK]__[Nama Mata Kuliah Baru]__[Catatan Mata Kuliah Baru]__[Deadline M.K Baru]\n\n*Tanpa Tanda Kurung []");
+    $bot->reply("Format Edit Catatan Tugas Kuliah :\n\n/edit_catatan [Pilih ID Kode MK]_[Nama Mata Kuliah Baru]_[Catatan Mata Kuliah Baru]_[Deadline M.K Baru]\n\n*Tanpa Tanda Kurung []");
 });
 
-$botman->hears("/edit_catatan {kode_mk}__{nama_mk}__{catatan_mk}__{deadline_mk}", function (Botman $bot, $kode_mk, $nama_mk, $catatan_mk, $deadline_mk) {
+$botman->hears("/edit_catatan {kode_mk}_{nama_mk}_{catatan_mk}_{deadline_mk}", function (Botman $bot, $kode_mk, $nama_mk, $catatan_mk, $deadline_mk) {
     $user = $bot->getUser();
     $firstname = $user->getFirstName();
     $id_user = $user->getId();
@@ -147,7 +147,7 @@ $botman->hears("/start@Aisyah_Bukan_Bot", function (BotMan $bot) {
 
     $id = $user->getId();
 
-    $bot->reply("Assalamualaikum $firstname 😊 (ID:$id),\nNama Saya Aisyah Salma. Selamat Datang Di Layanan Sekretaris Pribadi Anda.\n\nKetikkan Perintah /help Untuk Mengetahui Menu Perintah Yang Bisa Saya Kerjakan");
+    $bot->reply("Assalamualaikum $firstname ðŸ˜Š (ID:$id_user),\nNama Saya Aisyah Salma. Selamat Datang Di Layanan Sekretaris Pribadi Anda.\n\nKetikkan Perintah /help Untuk Mengetahui Menu Perintah Yang Bisa Saya Kerjakan");
     include "command/requestChat.php";
 });
 
@@ -184,10 +184,10 @@ $botman->hears("/tambah_catatan_tugas_kuliah@Aisyah_Bukan_Bot", function (BotMan
 
     include "command/requestChat.php";
 
-    $bot->reply("Format Tambah Catatan Tugas Kuliah :\n\n/tambah_catatan [Nama Mata Kuliah]__[Catatan Mata Kuliah]__[Deadline M.K]\n\n*Tanpa Tanda Kurung []");
+    $bot->reply("Format Tambah Catatan Tugas Kuliah :\n\n/tambah_catatan [Nama Mata Kuliah]_[Catatan Mata Kuliah]_[Deadline M.K]\n\n*Tanpa Tanda Kurung []");
 });
 
-$botman->hears("/tambah_catatan@Aisyah_Bukan_Bot {nama_mk}__{catatan_mk}__{deadline_mk}", function (Botman $bot, $nama_mk, $catatan_mk, $deadline_mk) {
+$botman->hears("/tambah_catatan@Aisyah_Bukan_Bot {nama_mk}_{catatan_mk}_{deadline_mk}", function (Botman $bot, $nama_mk, $catatan_mk, $deadline_mk) {
     $user = $bot->getUser();
     $firstname = $user->getFirstName();
     $id_user = $user->getId();
@@ -212,10 +212,10 @@ $botman->hears("/edit_catatan_tugas_kuliah@Aisyah_Bukan_Bot", function (Botman $
 
     include "command/requestChat.php";
 
-    $bot->reply("Format Edit Catatan Tugas Kuliah :\n\n/edit_catatan [Pilih ID Kode MK]__[Nama Mata Kuliah Baru]__[Catatan Mata Kuliah Baru]__[Deadline M.K Baru]\n\n*Tanpa Tanda Kurung []");
+    $bot->reply("Format Edit Catatan Tugas Kuliah :\n\n/edit_catatan [Pilih ID Kode MK]_[Nama Mata Kuliah Baru]_[Catatan Mata Kuliah Baru]_[Deadline M.K Baru]\n\n*Tanpa Tanda Kurung []");
 });
 
-$botman->hears("/edit_catatan@Aisyah_Bukan_Bot {kode_mk}__{nama_mk}__{catatan_mk}__{deadline_mk}", function (Botman $bot, $kode_mk, $nama_mk, $catatan_mk, $deadline_mk) {
+$botman->hears("/edit_catatan@Aisyah_Bukan_Bot {kode_mk}_{nama_mk}_{catatan_mk}_{deadline_mk}", function (Botman $bot, $kode_mk, $nama_mk, $catatan_mk, $deadline_mk) {
     $user = $bot->getUser();
     $firstname = $user->getFirstName();
     $id_user = $user->getId();
@@ -264,7 +264,7 @@ $botman->hears("/hapus_catatan@Aisyah_Bukan_Bot {kode_mk}", function (Botman $bo
 // command not found
 $botman->fallback(function (BotMan $bot) {
     $message = $bot->getMessage()->getText();
-    $bot->reply("Maaf, Perintah Ini '$message' Tidak Ada 😥");
+    $bot->reply("Maaf, Perintah Ini '$message' Tidak Ada ðŸ˜¥");
 });
 
 
