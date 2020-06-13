@@ -44,5 +44,7 @@ Via Telegram : @Aisyah_Bukan_Bot
 ## Cara Menjalankan Via Local
 1. Clone / Download This Repo 
 2. Push to htdocs or folder localhost.
-3. Webhook BOT : curl -d url=[ngrok server]/bot.php -X POST https://api.telegram.org/bot[TokenBOT]/setWebhook
-4. Done!. Testing for The BOT telegram
+3. CMD command to folder project: php -S localhost:[PORT]
+4. Open Ngrok, command : ngrok http [PORT]
+5. Webhook BOT : curl -d url=[https ngrok server]/bot.php -X POST https://api.telegram.org/bot[TokenBOT]/setWebhook
+6. Done!. Testing for The BOT telegram
