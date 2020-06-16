@@ -5,6 +5,7 @@
 ## STAR REPOSITORY Ini, Untuk Membantu Saya Dalam Meningkatkan Project Repo.
 - Kirim Pull Request, Jika mau berkontribusi dalam project ini
 - Kirim Issues, Jika ada permasalahan pada project ini
+- Kirim Pesan, Jika ada sesuatu yang ingin dipertanyakan
 
 ## Aisyah Bukan BOT
 Proyek API Development
