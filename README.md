@@ -50,7 +50,7 @@ Via Telegram : <a href="https://t.me/Aisyah_Bukan_Bot">@Aisyah_Bukan_Bot</a>
 4. CMD command to folder project: php -S localhost:[PORT]
 5. Open Ngrok, command : ngrok http [PORT]
 6. Webhook BOT : 
-<br>
+
 ```bash
 curl -d url=[https ngrok server]/bot.php -X POST https://api.telegram.org/bot[TokenBOT]/setWebhook (tanpa tanda "[]" )
 ```
