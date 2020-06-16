@@ -49,3 +49,7 @@ Via Telegram : @Aisyah_Bukan_Bot
 4. Open Ngrok, command : ngrok http [PORT]
 5. Webhook BOT : curl -d url=[https ngrok server]/bot.php -X POST https://api.telegram.org/bot[TokenBOT]/setWebhook
 6. Done!. Testing for The BOT telegram
+
+## NOTE: 
+- Anda perlu memasukan token BOT TELEGRAM anda pada file 'token.txt' di folder private (private/token.txt)
+- Anda perlu setting database dahulu (aisyah_bukan_bot.sql)
