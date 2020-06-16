@@ -40,7 +40,11 @@ Via Telegram : <a href="https://t.me/Aisyah_Bukan_Bot">@Aisyah_Bukan_Bot</a>
 1. Clone / Download This Repo 
 2. Push to Web Host.
 3. Setting Database
-4. Webhook BOT : <br>https://api.telegram.org/bot[TokenBOT]/setWebhook?url=[Webhost]/[FolderProject]/bot.php (tanpa tanda "[]" )
+4. Webhook BOT : 
+
+```bash
+https://api.telegram.org/bot[TokenBOT]/setWebhook?url=[Webhost]/[FolderProject]/bot.php (tanpa tanda "[]" )
+```
 5. Done!. Testing for The BOT telegram
 
 ## Cara Menjalankan Via Local
@@ -54,7 +58,6 @@ Via Telegram : <a href="https://t.me/Aisyah_Bukan_Bot">@Aisyah_Bukan_Bot</a>
 ```bash
 curl -d url=[https ngrok server]/bot.php -X POST https://api.telegram.org/bot[TokenBOT]/setWebhook (tanpa tanda "[]" )
 ```
-
 7. Done!. Testing for The BOT telegram
 
 ## NOTE: 
