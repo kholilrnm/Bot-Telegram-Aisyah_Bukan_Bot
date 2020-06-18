@@ -61,6 +61,7 @@ curl -d url=[https ngrok server]/bot.php -X POST https://api.telegram.org/bot[To
 7. Done!. Testing for The BOT telegram
 
 ## Menghapus Webhook
+Berikut menghapus webhook melalui browser :
 
 ```html
 https://api.telegram.org/bot[TOKEN]/setWebhook
