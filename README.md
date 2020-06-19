@@ -5,7 +5,7 @@
 ## STAR REPOSITORY Ini, Untuk Membantu Saya Dalam Meningkatkan Project Repo.
 - Kirim Pull Request, Jika mau berkontribusi dalam project ini
 - Kirim Issues, Jika ada permasalahan pada project ini
-- Kirim Pesan, Jika ada sesuatu yang ingin dipertanyakan
+- Kirim Pesan Saya, Jika ada sesuatu yang ingin dipertanyakan
 
 ## Aisyah Bukan BOT
 Proyek API Development
@@ -37,7 +37,7 @@ Via Telegram : <a href="https://t.me/Aisyah_Bukan_Bot">@Aisyah_Bukan_Bot</a>
 <br>
 
 ## Cara Menjalankan Via Hosting
-1. Clone / Download This Repo 
+1. Fork / Download This Repo 
 2. Push to Web Host.
 3. Setting Database
 4. Webhook BOT : 
@@ -48,7 +48,7 @@ https://api.telegram.org/bot[TokenBOT]/setWebhook?url=[Webhost]/[FolderProject]/
 5. Done!. Testing for The BOT telegram
 
 ## Cara Menjalankan Via Local
-1. Clone / Download This Repo 
+1. Fork / Download This Repo 
 2. Push to htdocs or folder anywhere.
 3. Setting Database
 4. CMD command to folder project: php -S localhost:[PORT]
