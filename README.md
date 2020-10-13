@@ -43,7 +43,7 @@ Via Telegram : <a href="https://t.me/Aisyah_Bukan_Bot">@Aisyah_Bukan_Bot</a>
 4. Webhook BOT : 
 
 ```bash
-https://api.telegram.org/bot[TokenBOT]/setWebhook?url=[Webhost]/[FolderProject]/bot.php (tanpa tanda "[]" )
+https://api.telegram.org/bot[TokenBOT]/setWebhook?url=[Webhost]/[FolderProject - Jika Pake Folder]/bot.php (tanpa tanda "[]" )
 ```
 5. Done!. Testing for The BOT telegram
 
@@ -51,9 +51,9 @@ https://api.telegram.org/bot[TokenBOT]/setWebhook?url=[Webhost]/[FolderProject]/
 1. Fork / Download This Repo 
 2. Push to htdocs or folder anywhere.
 3. Setting Database
-4. CMD command to folder project: php -S localhost:[PORT]
-5. Open Ngrok, command : ngrok http [PORT]
-6. Webhook BOT : 
+4. CMD/GitBash command to folder project: php -S localhost:[PORT]  (biasanya port 80)
+5. Open Aplikasi Ngrok, command : ngrok http [PORT]  (mengikuti port localhost)
+6. Webhook BOT With CMD/GitBash : 
 
 ```bash
 curl -d url=[https ngrok server]/bot.php -X POST https://api.telegram.org/bot[TokenBOT]/setWebhook (tanpa tanda "[]" )
@@ -70,4 +70,5 @@ https://api.telegram.org/bot[TOKEN]/setWebhook
 ## NOTE: 
 - Anda perlu memasukan token BOT TELEGRAM anda pada file 'token.txt' di folder private (private/token.txt)
 - Anda perlu setting database dahulu (aisyah_bukan_bot.sql)
-
+- Untuk Error bisa dilihat pada cmd nya (cmd yang saat command php -S localhost)
+- Untuk dokumentasi botman bisa dilihat di https://botman.io/2.0/welcome 

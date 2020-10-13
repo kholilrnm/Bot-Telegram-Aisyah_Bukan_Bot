@@ -25,9 +25,10 @@ $botman = BotManFactory::create($configs);
 $botman->hears("/start", function (BotMan $bot) {
     $user = $bot->getUser();
     $firstname = $user->getFirstName();
+    $lastname = $user->getLastName();
     $id_user = $user->getId();
 
-    $bot->reply("Assalamualaikum $firstname ðŸ˜Š (ID:$id_user),\nNama Saya Aisyah Salma. Selamat Datang Di Layanan Sekretaris Pribadi Anda.\n\nKetikkan Perintah /help Untuk Mengetahui Menu Perintah Yang Bisa Saya Kerjakan");
+    $bot->reply("Assalamualaikum $firstname $lastname (ID:$id_user),\nNama Saya Aisyah Salma. Selamat Datang Di Layanan Sekretaris Pribadi Anda.\n\nKetikkan Perintah /help Untuk Mengetahui Menu Perintah Yang Bisa Saya Kerjakan");
     include "command/requestChat.php";
 });
 
@@ -38,7 +39,8 @@ $botman->hears("/help", function (Botman $bot) {
     
     include "command/requestChat.php";
     
-    $bot->reply("/lihat_catatan_tugas_kuliah \n*Untuk Melihat Catatan M.K");
+    $bot->reply("/lihat_catatan_tugas_kuliah \n*Untuk Melihat Seluruh Catatan M.K");
+    $bot->reply("/cari_catatan [Kode MK] \n*Untuk Melihat Per Catatan M.K");
     $bot->reply("/tambah_catatan_tugas_kuliah \n*Untuk Membuat Catatan M.K");
     $bot->reply("/edit_catatan_tugas_kuliah \n*Untuk Mengedit Catatan M.K");
     $bot->reply("/hapus_catatan_tugas_kuliah \n*Untuk Menghapus Catatan M.K");
@@ -137,6 +139,21 @@ $botman->hears("/hapus_catatan {kode_mk}", function (Botman $bot, $kode_mk) {
 
 });
 
+$botman->hears("/cari_catatan {kode_mk}", function (Botman $bot, $kode_mk) {
+    $user = $bot->getUser();
+    $firstname = $user->getFirstName();
+    $id_user = $user->getId();
+
+    include "command/requestChat.php";
+    
+    $kode_mk = $kode_mk;
+    
+    include "command/cariDataCatatan.php";
+
+    $message = cariDataCatatan($id_user, $kode_mk);
+    $bot->reply($message);
+
+});
 
 // ------------------------------------------------------------pembatas---------------------------------------------------------- 
 // Command with @ to bot
