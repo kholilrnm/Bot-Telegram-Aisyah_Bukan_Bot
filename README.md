@@ -30,11 +30,6 @@ Via Telegram : <a href="https://t.me/Aisyah_Bukan_Bot">@Aisyah_Bukan_Bot</a>
         <img src="/images/aisyah2.jpg" width="238" height="414">
 </p>
 
-<br>
-<p align="center">
-        <img src="/images/aisyah3.jpg" width="238" height="414">
-</p>
-<br>
 
 ## Cara Menjalankan Via Hosting
 1. Fork / Download This Repo 
