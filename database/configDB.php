@@ -3,9 +3,9 @@
 function connDB() {
 
    $dbServer = 'localhost';
-   $dbUser = 'pmhwebid_aisyah';
-   $dbPass = 'aisyahsalma';
-   $dbName = "pmhwebid_Aisyah_Bukan_Bot";
+   $dbUser = '..';
+   $dbPass = '..';
+   $dbName = "..";
 
    $conn = mysqli_connect($dbServer, $dbUser, $dbPass);
 
