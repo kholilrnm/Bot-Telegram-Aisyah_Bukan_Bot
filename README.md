@@ -70,5 +70,5 @@ https://api.telegram.org/bot[TOKEN]/setWebhook
 ## NOTE: 
 - Anda perlu memasukan token BOT TELEGRAM anda pada file 'token.txt' di folder private (private/token.txt)
 - Anda perlu setting database dahulu (aisyah_bukan_bot.sql)
-- Untuk Error bisa dilihat pada cmd nya (cmd yang saat command php -S localhost)
+- Disarankan testing via local -> Untuk Error bisa dilihat pada cmd nya (cmd yang saat command php -S localhost)
 - Untuk dokumentasi botman bisa dilihat di https://botman.io/2.0/welcome 
