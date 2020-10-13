@@ -277,11 +277,26 @@ $botman->hears("/hapus_catatan@Aisyah_Bukan_Bot {kode_mk}", function (Botman $bo
 
 });
 
+$botman->hears("/cari_catatan@Aisyah_Bukan_Bot {kode_mk}", function (Botman $bot, $kode_mk) {
+    $user = $bot->getUser();
+    $firstname = $user->getFirstName();
+    $id_user = $user->getId();
+
+    include "command/requestChat.php";
+    
+    $kode_mk = $kode_mk;
+    
+    include "command/cariDataCatatan.php";
+
+    $message = cariDataCatatan($id_user, $kode_mk);
+    $bot->reply($message);
+
+});
 
 // command not found
 $botman->fallback(function (BotMan $bot) {
     $message = $bot->getMessage()->getText();
-    $bot->reply("Maaf, Perintah Ini '$message' Tidak Ada ðŸ˜¥");
+    $bot->reply("Maaf, Perintah Ini '$message' Tidak Ada 😐");
 });
 
 
