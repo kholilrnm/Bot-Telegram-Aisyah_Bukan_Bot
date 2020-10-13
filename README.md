@@ -51,7 +51,7 @@ https://api.telegram.org/bot[TokenBOT]/setWebhook?url=[Webhost]/[FolderProject -
 1. Fork / Download This Repo 
 2. Push to htdocs or folder anywhere.
 3. Setting Database
-4. CMD/GitBash command to folder project: php -S localhost:[PORT]  (biasanya port 80)
+4. CMD/GitBash command to folder project: php -S localhost:[PORT]  (contoh 80)
 5. Open Aplikasi Ngrok, command : ngrok http [PORT]  (mengikuti port localhost) https://ngrok.com/download
 6. Webhook BOT With CMD/GitBash : 
 
